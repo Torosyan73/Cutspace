@@ -1,0 +1,166 @@
+.objects {
+    padding: 46px 0 77px;
+}
+
+.objects__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 181px;
+    overflow-x: hidden;
+
+    @media(max-width: 1505px) {
+        justify-content: flex-end;
+    }
+}
+
+.objects__img {
+    display: flex;
+    column-gap: 32px;
+}
+
+.img-card {
+    width: 385px;
+    position: relative;
+
+    & img {
+        border-radius: 20px 20px 0 20px;
+    }
+
+    &--left img {
+        border-radius: 0 20px 20px 0;
+    }
+}
+
+.img-card__info {
+    position: absolute;
+    bottom: 87px;
+    right: -46px;
+}
+
+.objects__content {
+    margin-right: 150px;
+    max-width: 372px;
+    flex-shrink: 0;
+}
+
+.objects__title {
+    margin-bottom: 20px;
+}
+
+.objects__text {
+    margin-bottom: 40px;
+    line-height: 1.69;
+    letter-spacing: 1.15px;
+
+    & p + p {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 992px) {
+    .objects {
+        padding: 30px  0;
+    }
+
+    .objects__row {
+        column-gap: 100px;
+    }
+
+    .img-card {
+        width: 285px;
+    }
+
+    .objects__content {
+        margin-right: 50px;
+    }
+
+    .objects__title {
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 800px) {
+    .objects__row {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .img-card__info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+    }
+
+    .objects__content {
+        padding: 0 15px;
+        margin-right: 0;
+        max-width: 50%;
+        text-align: center;
+    }
+    
+    .objects__title {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 640px) {
+    .img-card {
+        width: 219px;
+
+        & img {
+            border-radius: 20px;
+        }
+    }
+
+    .img-card__info {
+        bottom: 0;
+    }
+
+    .objects__content {
+        max-width: 70%;
+    }
+}
+
+@media(max-width: 500px) {
+    .objects__img {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .img-card {
+        width: 290px;
+    }
+
+    .objects__content {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px) {
+    
+}
+
+@media(max-width: 425px) {
+    
+}

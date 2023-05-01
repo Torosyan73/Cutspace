@@ -1,0 +1,33 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: $text-color;
+}
+
+.container {
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container--fluid {
+    max-width: unset;
+    padding: 0;
+    width: 100%;
+}
+
+.visually-hidden {
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: -10000px;
+    background-color: transparent;
+    font-size: 0;
+}
+
+.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+}

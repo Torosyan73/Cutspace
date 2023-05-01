@@ -1,0 +1,49 @@
+.benefit-item {
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__img {
+        margin-bottom: 15px;
+
+        circle {
+            fill: rgba(88, 190, 191, 0.2);
+            transition: fill 0.2s ease-in;
+        }
+
+        path, ellipse {
+            fill: #58BEBF;
+            transition: fill 0.2s ease-in;
+        }
+    }
+
+    &:hover .benefit-item__img{
+        circle {
+            fill: #F78434;
+        }
+    
+        path, ellipse {
+            fill: #fff;
+        }
+    }
+}
+
+.benefit-item__title {
+    margin-bottom: 2px;
+    font-size: 28px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.benefit-item__text {
+    line-height: 1.69;
+    letter-spacing: 1.15px;
+}
+
+@media(max-width: 768px) {
+    .benefit-item__title {
+        font-size: 24px;
+    }
+}

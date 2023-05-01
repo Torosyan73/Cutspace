@@ -1,0 +1,131 @@
+.cta {
+    padding: 77px 0 72px;
+}
+
+.cta__block {
+    display: flex;
+    align-items: center;
+    column-gap: 96px;
+    background: 
+        url('./../../img/cta/bottom-oval.svg') bottom left 370px no-repeat,
+        url('./../../img/cta/top-oval.svg') right top no-repeat;
+    background-color: #58BEBF;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.cta__img {
+    max-width: 100%;
+    margin-top: 59px;
+    padding: 25px 24px 0 0;
+    background-color: #fff;
+    box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+    border-radius: 0 21px 0 0;
+}
+
+.cta__content {
+    max-width: 394px;
+    padding: 0 15px;
+}
+
+.cta__title {
+    margin-bottom: 15px;
+}
+
+.cta__text {
+    line-height: 1.69;
+    letter-spacing: 1.15px;
+
+    & p + p {
+        margin-top: 1em;
+    }
+
+    & + * {
+        margin-top: 30px;
+    }
+}
+
+.cta__buttons {
+    display: flex;
+    column-gap: 20px;
+}
+
+@media(max-width: 1100px) {
+    .cta__title {
+        font-size: 32px;
+    }
+
+    .cta__buttons {
+        .button {
+            padding: 14px 30px;
+            height: 50px;
+            border-radius: 25px;
+        }
+
+        .button--play {
+            padding-left: 39px;
+
+            &::before {
+                top: 50%;
+                transform: translateY(-50%);
+                left: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .cta__block {
+        column-gap: 46px;
+    }
+}
+
+@media(max-width: 768px) {
+    .cta {
+        padding: 30px 0;
+    }
+
+    .cta__block {
+        padding: 30px 15px;
+        flex-direction: column;
+        row-gap: 30px;
+        background: 
+            url('./../../img/cta/bottom-oval.svg') bottom center no-repeat,
+            url('./../../img/cta/top-oval.svg') right top no-repeat;
+        background-color: #58BEBF;
+        text-align: center;
+    }
+
+    .cta__img {
+        max-width: 100%;
+        order: 1;
+        margin-top: 0;
+        padding: 20px;
+        border-radius: 21px;
+    }
+
+    .cta__content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta__title {
+        font-size: 28px;
+    }
+    
+    .cta__text {
+        & + * {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .cta__buttons {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
